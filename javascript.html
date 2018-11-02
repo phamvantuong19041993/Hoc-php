@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+	<input type="text" name="soa">
+	
+	<div class="kq"></div>
+	<button onclick="kiemtra()">kiemtra</button>
+	
+	<script type="text/javascript">
+		function kiemtra(){
+			Soa = document.getElementsByName("soa")[0].value;
+			Soa1 = parseInt(Soa);
+			var sum =0;
+			for(var i =1; i<=Soa1; i++)
+			{
+				if(Soa1%i ==0)
+				{
+					sum += 1;
+				}
+			}
+			if(sum == 2)
+			{
+
+				$(".kq").empty();
+				$(".kq").append("<h1> La so nguyen to</h1>	");
+				
+			}
+		}
+
+
+	</script>
+	<script src="jquery-3.2.1.min.js"></script>
+	<script src="myjquery/jquery.js"></script>
+
+
+
+</body>
+</html>
